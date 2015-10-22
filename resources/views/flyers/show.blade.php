@@ -18,7 +18,7 @@
                 <img src="/{{ $photo->path }}" alt="">
             @endforeach
         </div>
-    </div>
+    //</div>
 
     <hr>
 
