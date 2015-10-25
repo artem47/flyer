@@ -23,14 +23,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Flyer</a>
+            <a class="navbar-brand" href="/">Flyer</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
 
             @if($signedIn)
             <p class="navbar-text navbar-right">
@@ -38,6 +39,15 @@
                 Hello, {{$user->name}}
             </p>
             @endif
+
+            <div id ="navbar" class="navbar-right">
+                <ul class=" nav navbar-nav">
+                    <li><a href="/auth/login">Login</a> </li>
+                    <li><a href="/auth/logout">Logout</a> </li>
+                    <li><a href="/auth/register">Register</a> </li>
+                </ul>
+            </div>
+
         </div>
         <!--/.nav-collapse -->
     </div>
