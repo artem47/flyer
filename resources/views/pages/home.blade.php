@@ -11,8 +11,13 @@
             to create something more unique by building on or modifying it.
         </p>
 
-        <a href="/flyers/create" class="btn btn-primary">Создать флаер</a>
-
+        @if($signedIn)
+            <a href="/flyers/create" class="btn btn-primary">Создать флаер</a>
+        @else
+            <a href="/auth/register" class="btn btn-primary">SignUp</a>
+            or
+            <a href="/auth/login" class="btn btn-primary">SignIn</a>
+        @endif
     </div>
 
 @stop
